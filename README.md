@@ -1,13 +1,21 @@
 # Employee Attrition Prediction with Python
+Employee attrition is a critical challenge for organizations due to its impact on cost, productivity, and team morale.  
+This project uses real HR data and machine learning techniques to analyze why employees leave and to predict attrition risk, with the objective of supporting data-driven HR and management decision-making.
 
-This project predicts employee attrition using machine learning techniques on real HR data. 
-It demonstrates an end-to-end data science workflow: EDA, preprocessing, modeling, evaluation, and insights.
 
 ## Dataset
-IBM HR Analytics Employee Attrition & Performance Dataset  
+
+The project uses the **IBM HR Analytics Employee Attrition & Performance Dataset**, which contains employee-level information such as demographics, job role, compensation, performance, and work conditions.
+
 Source: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 
-> Note: Due to Kaggle licensing, the dataset is not included in this repository. Please download it manually and place it in the `data/` folder.
+**Note:** The dataset is publicly available on Kaggle and is not included in this repository due to licensing restrictions. Instructions to reproduce the analysis are provided.
+
+## Key Business Questions
+
+- What factors are most strongly associated with employee attrition?
+- Can employee attrition be predicted using historical HR data?
+- How can predictive insights help HR teams take proactive retention actions?
 
 ## Tech Stack
 - Python
@@ -16,12 +24,20 @@ Source: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition
 - Scikit-learn
 
 ## Project Workflow
-1. Data loading and inspection  
-2. Exploratory Data Analysis (EDA)  
-3. Encoding categorical variables  
-4. Train-test split  
-5. Random Forest classification  
-6. Model evaluation and feature importance analysis  
+1. Data understanding and exploratory data analysis (EDA)
+2. Identification of attrition patterns and trends
+3. Encoding of categorical variables and feature preparation
+4. Model training using Random Forest classification
+5. Model evaluation and interpretation of results
+6. Identification of key drivers influencing employee attrition
+   
+## Key Insights
+
+- Employees working overtime showed a higher likelihood of attrition.
+- Job role and monthly income were strong predictors of employee turnover.
+- Work-life balance and job satisfaction played a significant role in retention.
+- Predictive models can support early identification of high-risk attrition groups.
+
 
 ## Results
 - Achieved ~85% accuracy on test data (baseline model)
